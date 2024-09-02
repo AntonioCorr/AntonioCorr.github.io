@@ -2,17 +2,17 @@ export const experience = [
   {
     title: "Undergraduate Teaching Assistant | Data Science",
     corporation: "University of Massachusetts Amherst",
-    date: "09/2024 - Present",
+    date: "Sept. 2024 - Present",
   },
   {
     title: "Machine Learning and Cybersecurity Intern",
     corporation: "Dassault Systèmes | Solidworks",
-    date: "05/2024 - 08/2024",
+    date: "May 2024 - Aug. 2024",
   },
   {
     title: "Real Estate Agent",
     corporation: "Boston Pads | NextGen Realty",
-    date: "06/2021 - 06/2022",
+    date: "June 2021 - June 2022",
   },
 ];
 export const education = [
