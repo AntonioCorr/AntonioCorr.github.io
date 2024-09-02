@@ -22,7 +22,7 @@ export const education = [
     minor: "Minor in Computer Science",
     gpa: "Major GPA: 3.8",
   },
-]
+];
 
 export const IconKeys = {
   html: "html",
