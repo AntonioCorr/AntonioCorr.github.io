@@ -145,9 +145,9 @@ export const skills = [
 
 export const projects = [
   {
-    img: "../../../public/img/loan.jpg",
+    img: "img/loan.jpg",
     title: "Credit Risk Analysis",
-    link: "../../../public/pdf/credit_risk.pdf",
+    link: "pdf/credit_risk.pdf",
     description: `Trained predictive models to predict financial trustworthiness based on debtors' credit metrics`,
     technologies: [
       {
