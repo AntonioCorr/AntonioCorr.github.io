@@ -1,0 +1,179 @@
+---
+import { experience } from "../../../const/const";
+import { education } from "../../../const/const";
+---
+
+<section class="section_experience">
+  <div class="linear-grandient-1"></div>
+  <div class="content_both">
+    <div class="content_experience">
+      <h3 class="title-experience" id="experience">Experience</h3>
+      <ul class="ul-experience">
+        {
+          experience.map(({ date, title, corporation }) => (
+            <li class="li-experience">
+              <span class="circle" />
+              <div>
+                <h3>{title}</h3>
+                <p>{corporation}</p>
+                <span>{date}</span>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="content_education">
+      <h3 class="title-education" id="education">Education</h3>
+      <ul class="ul-education">
+        {
+          education.map(({ school, major, minor, gpa }) => (
+            <li class="li-education">
+              <span class="circle" />
+              <div>
+                <h3>{school}</h3>
+                <p>{major}</p>
+                <p>{minor}</p>
+                <span>{gpa}</span>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+  
+</section>
+
+<style>
+  .content_both {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1355px;
+  }
+  .section_experience {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #111111;
+    justify-content: center;
+    align-items: top;
+  }
+  .linear-grandient-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: radial-gradient(at left center, rgba(1, 190, 150 , 0.5), transparent , transparent); */
+    background: linear-gradient(to top, rgba(49, 8, 114, 0.6), #000);
+    background: ;
+    z-index: 0;
+  }
+  .content_experience {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 49%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .content_education {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 49%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .title-experience {
+    font-size: 27px;
+    color: #f6f6f9;
+    text-align: left;
+    width: 100%;
+    font-weight: 800;
+    scroll-margin-top: 80px;
+    padding: 20px 0;
+  }
+  .title-education {
+    font-size: 27px;
+    color: #f6f6f9;
+    text-align: right;
+    width: 100%;
+    font-weight: 800;
+    scroll-margin-top: 80px;
+    padding: 20px 0;
+  }
+  .ul-experience {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .li-experience {
+    padding: 0px 20px;
+    color: #f6f6f9;
+    border-left: 1px solid #f6f6f9;
+    list-style: none;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .ul-experience .circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: -5px;
+    top: 5px;
+    background-color: #f6f6f9;
+  }
+  .li-experience h3 {
+    padding-bottom: 5px;
+    font-weight: 200;
+  }
+  .li-experience p {
+    padding: 5px 0;
+  }
+  .li-experience span {
+    font-size: 13px;
+  }
+  .ul-education {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .ul-education .circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    right: -5px;
+    top: 5px;
+    background-color: #f6f6f9;
+  }
+  .li-education {
+    padding: 0px 20px;
+    color: #f6f6f9;
+    border-right: 1px solid #f6f6f9;
+    list-style: none;
+    position: relative;
+    padding-bottom: 50px;
+    text-align: right;
+  }
+  .li-education h3 {
+    padding-bottom: 5px;
+    font-weight: 200;
+  }
+  .li-education p {
+    padding: 5px 0;
+  }
+  .li-education span {
+    font-size: 13px;
+  }
+</style>

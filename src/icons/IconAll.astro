@@ -1,0 +1,57 @@
+---
+import IconHtml from "./IconHtml.astro";
+import IconCss from "./IconCss.astro";
+import IconGit from "./IconGit.astro";
+import IconGitHub from "./IconGtiHub.astro";
+import IconJavaScript from "./IconJavaScritp.astro";
+import IconData from "./IconData.astro";
+import IconPython from "./IconPython.astro";
+import IconPandas from "./IconPandas.astro";
+import IconSkl from "./IconScikit.astro";
+import IconMatplotlib from "./IconMatplotlib.astro";
+import IconNumpy from "./IconNumpy.astro";
+import IconPytorch from "./IconPytorch.astro";
+import IconSQL from "./IconSql.astro";
+import IconR from "./IconR.astro";
+import IconMSword from "./IconWord.astro";
+import IconPowerpoint from "./IconPowerpoint.astro";
+import IconExcel from "./IconExcel.astro";
+import IconTableau from "./IconTableau.astro";
+import IconStats from "./IconStatistics.astro";
+import IconAnalytics from "./IconAnalytics.astro";
+import IconDataEngineering from "./IconDataengineering.astro";
+import IconRealEstate from "./IconRealestate.astro";
+import IconJava from "./IconJava.astro";
+import IconLatex from "./IconLatex.astro";
+
+export const ICONS = {
+  data: IconData,
+  html: IconHtml,
+  css: IconCss,
+  javaScript: IconJavaScript,
+  git: IconGit,
+  github: IconGitHub,
+  python: IconPython,
+  pandas: IconPandas,
+  skl: IconSkl,
+  matplotlib: IconMatplotlib,
+  numpy: IconNumpy,
+  pytorch: IconPytorch,
+  sql: IconSQL,
+  r: IconR,
+  word: IconMSword,
+  powerpoint: IconPowerpoint,
+  excel: IconExcel,
+  tableau: IconTableau,
+  stats: IconStats,
+  analytics: IconAnalytics,
+  dataengineering: IconDataEngineering,
+  realestate: IconRealEstate,
+  latex: IconLatex,
+  java: IconJava,
+};
+
+export function getIconComponent(iconName: string) {
+  return ICONS[iconName] || null;
+}
+---

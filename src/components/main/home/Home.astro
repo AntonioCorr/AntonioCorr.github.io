@@ -1,0 +1,231 @@
+---
+import { Image } from "astro:assets";
+import photoperfil from "../../../../public/img/photo-perfil.webp";
+import '@fontsource/major-mono-display';
+import '@fontsource/kode-mono';
+---
+
+<div class="content-presentation">
+  <div class="linear-gradient-2"></div>
+  <div class="linear-gradient-1"></div>
+  <dir class="container-persentation">
+    <div class="container-text">
+      <h2 class="text-name">Benjamin Correia</h2>
+      <div class="container-profession">
+        <span>Data Engineer</span>
+        <span>BI Engineer</span>
+        <span>Data Analyst</span>
+        <span>BI Analyst</span>
+      </div>
+    </div>
+    <div class="container-logo">
+      <lottie-player
+          src="https://lottie.host/f250e871-178a-4b5a-99f1-3824f139be58/Vc8KLN8jCb.json"
+          background="transparent"
+          speed="1"
+          style="width: 650px; height: 400px; position:relative; "
+          loop
+          autoplay></lottie-player>
+    </div>
+  </dir>
+</div>
+
+<style>
+  .linear-gradient-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 520px;
+    background: radial-gradient(
+      at left center,
+      rgba(49, 8, 114, 0.6),
+      transparent,
+      transparent
+    );
+    z-index: 0;
+  }
+  .linear-gradient-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 520px;
+    background: radial-gradient(
+      at right center,
+      rgba(49, 8, 114, 0.6),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0)
+    );
+    z-index: 0;
+  }
+
+  .container-persentation {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
+    width: 90%;
+    margin: 100px auto;
+    max-width: 1355px;
+  }
+  .container-text {
+    position: relative;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .text-hello {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
+  .text-name {
+    font-family: 'Kode Mono', monospace;
+    padding: 5px 0;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+  @media (max-width: 1350px) {
+  .container-logo {
+    display: none;
+  }
+  .container-profession{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-text {
+    text-align: center;
+  }
+  .container-persentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-profession span {
+	  animation:  fade 20s ease-in-out infinite 0s;
+	  -ms-animation: fade 20s ease-in-out infinite 0s;
+	  -webkit-animation: fade 20s ease-in-out infinite 0s;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 75px;
+    bottom: 0px;
+	  opacity: 0;
+	  overflow: hidden;
+	  position: absolute;
+    }
+    .container-profession span:nth-child(2){
+	    animation-delay: 5s;
+	    -ms-animation-delay: 5s;
+	    -webkit-animation-delay: 5s;
+    }
+    .container-profession span:nth-child(3){
+	    animation-delay: 10s;
+	    -ms-animation-delay: 10s;
+	    -webkit-animation-delay: 10s;
+    }
+    .container-profession span:nth-child(4){
+    	animation-delay: 15s;
+    	-ms-animation-delay: 15s;
+    	-webkit-animation-delay: 15s;
+    }
+    @-moz-keyframes fade{
+	    0% { opacity: 0; }
+    	12% { opacity: 1; }
+      25% { opacity: 0; }
+    }
+    @-webkit-keyframes fade{
+    	0% { opacity: 0; }
+    	12% { opacity: 1; }
+      25% { opacity: 0; }
+    }
+    @-ms-keyframes fade{
+    	0% { opacity: 0; }
+    	12% { opacity: 1; }
+      25% { opacity: 0; }
+    }
+}
+  .container-logo img {
+    position: absolute;
+    right: 50px;
+    bottom: -200px;
+    height: 450px;
+    opacity: 25%;
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+  }
+@-webkit-keyframes breathing {
+  0% { -webkit-transform: scale(0.9); transform: scale(0.9); }
+  25% { -webkit-transform: scale(1); transform: scale(1); }
+  100% { -webkit-transform: scale(0.9); transform: scale(0.9); }
+}
+@keyframes breathing {
+  0% { -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); }
+  25% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+  100% { -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); }
+}
+
+  .container-profession {
+    font-family: "Major Mono Display", monospace;
+    margin-bottom: 200px;
+  }
+
+  @media (min-width: 1351px) {
+    .container-profession span {
+	  animation:  rightToLeft 20s linear infinite 0s;
+	  -ms-animation: rightToLeft 20s linear infinite 0s;
+	  -webkit-animation: rightToLeft 20s linear infinite 0s;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 100px;
+	  opacity: 0;
+	  overflow: hidden;
+	  position: absolute;
+    }
+    .container-profession span:nth-child(2){
+	    animation-delay: 5s;
+	    -ms-animation-delay: 5s;
+	    -webkit-animation-delay: 5s;
+    }
+    .container-profession span:nth-child(3){
+	    animation-delay: 10s;
+	    -ms-animation-delay: 10s;
+	    -webkit-animation-delay: 10s;
+    }
+    .container-profession span:nth-child(4){
+    	animation-delay: 15s;
+    	-ms-animation-delay: 15s;
+    	-webkit-animation-delay: 15s;
+    }
+    @-moz-keyframes rightToLeft{
+	    0% { opacity: 0; }
+	    5% { opacity: 0; -moz-transform: translateX(800px); }
+    	10% { opacity: 0; -moz-transform: translateX(0px); }
+    	25% { opacity: 1; -moz-transform: translateX(0px); }
+    	30% { opacity: 0; -moz-transform: translateX(-100px); }
+    	80% { opacity: 0; }
+    	100% { opacity: 0; }
+    }
+    @-webkit-keyframes rightToLeft{
+    	0% { opacity: 0; }
+    	5% { opacity: 0; -webkit-transform: translateX(800px); }
+    	10% { opacity: 0; -webkit-transform: translateX(0px); }
+    	25% { opacity: 1; -webkit-transform: translateX(0px); }
+    	30% { opacity: 0; -webkit-transform: translateX(-100px); }
+    	80% { opacity: 0; }
+    	100% { opacity: 0; }
+    }
+    @-ms-keyframes rightToLeft{
+    	0% { opacity: 0; }
+    	5% { opacity: 0; -ms-transform: translateX(800px); }
+    	10% { opacity: 0; -ms-transform: translateX(0px); }
+    	25% { opacity: 1; -ms-transform: translateX(0px); }
+    	30% { opacity: 0; -ms-transform: translateX(-100px); }
+    	80% { opacity: 0; }
+    	100% { opacity: 0; }
+    }
+  }
+
+</style>
