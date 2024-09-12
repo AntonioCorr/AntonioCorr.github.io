@@ -17,7 +17,7 @@ export const experience = [
 ];
 export const education = [
   {
-    school: "University of Massachusetts Amherst",
+    school: "UMass Amherst",
     major: "Informatics B.S. | Data Science Concentration",
     minor: "Minor in Computer Science",
     gpa: "Major GPA: 3.8",
