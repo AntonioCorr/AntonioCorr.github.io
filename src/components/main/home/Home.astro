@@ -7,13 +7,15 @@ import '@fontsource/kode-mono';
   <div class="linear-gradient-2"></div>
   <div class="linear-gradient-1"></div>
   <dir class="container-persentation">
-    <div class="container-text">
-      <h2 class="text-name">Benjamin Correia</h2>
-      <div class="container-profession">
-        <span>Data Engineer</span>
-        <span>BI Engineer</span>
-        <span>Data Analyst</span>
-        <span>BI Analyst</span>
+    <div class="mobile-parent">
+      <div class="container-text">
+        <h2 class="text-name">Benjamin Correia</h2>
+        <div class="container-profession">
+          <span>Data Engineer</span>
+          <span>BI Engineer</span>
+          <span>Data Analyst</span>
+          <span>BI Analyst</span>
+        </div>
       </div>
     </div>
     <div class="container-logo">
@@ -97,10 +99,12 @@ import '@fontsource/kode-mono';
     justify-content: center;
     text-align: center;
   }
+  .mobile-parent {
+    text-align: center;
+  }
   .container-text {
     display: table;
-    position: static;
-    margin: auto;
+    margin: 0 auto;
   }
   .text-name {
     text-align: center;
