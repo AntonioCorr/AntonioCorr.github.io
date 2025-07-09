@@ -1,5 +1,10 @@
 export const experience = [
   {
+    title: "Business Insights & Analytics Leadership Development Program | Decision Science Intern",
+    corporation: "Travelers Insurance",
+    date: "June 2025 - Aug. 2025",
+  },
+  {
     title: "Undergraduate Teaching Assistant | Data Science",
     corporation: "University of Massachusetts Amherst",
     date: "Sept. 2024 - Present",
