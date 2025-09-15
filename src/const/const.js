@@ -7,7 +7,7 @@ export const experience = [
   {
     title: "Undergraduate Teaching Assistant | Data Science",
     corporation: "University of Massachusetts Amherst",
-    date: "Sept. 2024 - Present",
+    date: "Sept. 2024 - June 2025",
   },
   {
     title: "Machine Learning and Cybersecurity Intern",
@@ -25,7 +25,7 @@ export const education = [
     school: "UMass Amherst",
     major: "Informatics B.S. | Data Science Concentration",
     minor: "Minor in Computer Science",
-    gpa: "Major GPA: 3.8",
+    gpa: "Major GPA: 3.7",
   },
 ];
 
