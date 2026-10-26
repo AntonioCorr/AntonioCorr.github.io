@@ -12,7 +12,7 @@ export const experience = [
   {
     title: "Undergraduate Teaching Assistant | Data Science",
     corporation: "University of Massachusetts Amherst",
-    date: "Sept. 2024 - June 2025",
+    date: "Sept. 2024 - May 2025",
   },
   {
     title: "Machine Learning and Cybersecurity Intern",
@@ -60,6 +60,14 @@ export const IconKeys = {
   latex: "latex",
   java: "java",
   mongodb: "mongodb",
+  snowflake: "snowflake",
+  databricks: "databricks",
+  spark: "spark",
+  kafka: "kafka",
+  docker: "docker",
+  claudecode: "claudecode",
+  greatexpectations: "greatexpectations",
+  alation: "alation",
   // here add more icon keys
 };
 
@@ -90,19 +98,19 @@ export const skills = [
   },
   {
     title: "Snowflake",
-    fa: "fa-solid fa-snowflake"
+    icon: IconKeys.snowflake
   },
   {
     title: "Databricks",
-    fa: "fa-solid fa-layer-group"
+    icon: IconKeys.databricks
   },
   {
     title: "Spark",
-    fa: "fa-solid fa-bolt"
+    icon: IconKeys.spark
   },
   {
     title: "Kafka",
-    fa: "fa-solid fa-tower-broadcast"
+    icon: IconKeys.kafka
   },
   {
     title: "AWS",
@@ -110,7 +118,7 @@ export const skills = [
   },
   {
     title: "Docker",
-    fa: "fa-brands fa-docker"
+    icon: IconKeys.docker
   },
   {
     title: "MongoDB",
@@ -122,31 +130,19 @@ export const skills = [
   },
   {
     title: "Alation",
-    fa: "fa-solid fa-book-open"
+    icon: IconKeys.alation
   },
   {
     title: "Great Expectations",
-    fa: "fa-solid fa-circle-check"
+    icon: IconKeys.greatexpectations
   },
   {
     title: "Claude Code",
-    fa: "fa-solid fa-terminal"
+    icon: IconKeys.claudecode
   },
   {
     title: "R",
     icon: IconKeys.r
-  },
-  {
-    title: "MS Word",
-    icon: IconKeys.word
-  },
-  {
-    title: "MS Powerpoint",
-    icon: IconKeys.powerpoint
-  },
-  {
-    title: "MS Excel",
-    icon: IconKeys.excel
   },
   {
     title: "Tableau",
@@ -163,10 +159,6 @@ export const skills = [
   {
     title: "Data Engineering",
     icon: IconKeys.dataengineering
-  },
-  {
-    title: "Real Estate",
-    icon: IconKeys.realestate
   },
   {
     title: "LaTeX",
