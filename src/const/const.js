@@ -195,7 +195,7 @@ export const projects = [
     img: "img/loan.jpg",
     title: "Credit Risk Analysis",
     link: "pdf/credit_risk.pdf",
-    description: `Built logistic regression and random forest models in R to predict loan defaults on 26,000+ loans, handling class imbalance and testing every model on the same held-out data`,
+    description: `Built logistic regression and random forest models in R to predict loan defaults on 26,000+ loans.`,
     technologies: [
       {
         icon: IconKeys.r
