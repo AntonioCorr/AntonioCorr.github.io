@@ -9,11 +9,12 @@ import { getIconComponent } from "../../../icons/IconAll.astro";
     <h2 class="title-skills" id="skills">Skills</h2>
     <ul class="ul-skill">
       {
-        skills.map(({ icon, title }) => {
-          const IconComponent = getIconComponent(icon);
+        skills.map(({ icon, fa, title }) => {
+          const IconComponent = icon ? getIconComponent(icon) : null;
           return (
             <li class="li-skills">
               {IconComponent && <IconComponent />}
+              {fa && <i class={`${fa} fa-skill`} aria-hidden="true" />}
               <p class="p-skill">{title}</p>
             </li>
           );
@@ -62,6 +63,13 @@ import { getIconComponent } from "../../../icons/IconAll.astro";
 
   .p-skill {
     padding: 5px 0;
+  }
+  /* global: the Font Awesome kit may swap the <i> for an <svg>, which drops Astro's scoping attribute */
+  :global(.fa-skill) {
+    font-size: 45px;
+    line-height: 45px;
+    height: 45px;
+    color: #f6f6f9;
   }
   .linear-grandient-1 {
     position: absolute;

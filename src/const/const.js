@@ -1,5 +1,10 @@
 export const experience = [
   {
+    title: "Engineering Development Program | Data Engineer",
+    corporation: "Travelers Insurance",
+    date: "Feb. 2026 - Present",
+  },
+  {
     title: "Business Insights & Analytics Leadership Development Program | Decision Science Intern",
     corporation: "Travelers Insurance",
     date: "June 2025 - Aug. 2025",
@@ -54,6 +59,7 @@ export const IconKeys = {
   realestate: "realestate",
   latex: "latex",
   java: "java",
+  mongodb: "mongodb",
   // here add more icon keys
 };
 
@@ -81,6 +87,50 @@ export const skills = [
   {
     title: "SQL",
     icon: IconKeys.sql
+  },
+  {
+    title: "Snowflake",
+    fa: "fa-solid fa-snowflake"
+  },
+  {
+    title: "Databricks",
+    fa: "fa-solid fa-layer-group"
+  },
+  {
+    title: "Spark",
+    fa: "fa-solid fa-bolt"
+  },
+  {
+    title: "Kafka",
+    fa: "fa-solid fa-tower-broadcast"
+  },
+  {
+    title: "AWS",
+    fa: "fa-brands fa-aws"
+  },
+  {
+    title: "Docker",
+    fa: "fa-brands fa-docker"
+  },
+  {
+    title: "MongoDB",
+    icon: IconKeys.mongodb
+  },
+  {
+    title: "CI/CD",
+    fa: "fa-solid fa-infinity"
+  },
+  {
+    title: "Alation",
+    fa: "fa-solid fa-book-open"
+  },
+  {
+    title: "Great Expectations",
+    fa: "fa-solid fa-circle-check"
+  },
+  {
+    title: "Claude Code",
+    fa: "fa-solid fa-terminal"
   },
   {
     title: "R",
